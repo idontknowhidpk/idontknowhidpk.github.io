@@ -1,0 +1,27 @@
+html {
+    scroll-behavior: smooth;
+  }
+  body{
+    background-color: black;
+    overflow:auto;
+    font-family: 'Lalezar', cursive;
+}
+#paragraph{
+    color:rgb(248, 0, 0);
+    font-size: 20px;
+}
+#input{
+    font-family: 'Lalezar', cursive;
+    width: fit-content;
+
+}
+.koni{
+    border:5px solid red;
+    padding:50px;
+    direction: rtl;
+    margin: 50px;
+}
+#button{
+    font-family: 'Lalezar', cursive;
+    width: fit-content;
+}

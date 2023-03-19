@@ -4,23 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KirKhar</title>
-    <style>body{background-color: black;}
-        </style>
+    <link rel="stylesheet" href="css/style.css">
+    <title>کیر خر</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Lalezar&family=Roboto&family=Rubik+Iso&family=Tilt+Prism&display=swap" rel="stylesheet">
 </head>
-<body>
-    <p style="color: blue;" id="p1">سلام دوست داری برات چه کاری انجام بدم؟</p>
-    <input style="width: 300px;border:5px solid black;" type="text" placeholder="'کاری که میخوای برات انجام بدم رو بنویس">
-    <br>
-    <button id="play">تایید</button>
-    نویسنده ="امیر حسین فردی"
-    <script>
-        let play = document.getElementById("play");
+<body style="background-image:url('img/black.jpg');background-repeat:no-repeat;background-attachment:fixed;background-position: center;">
+        <div class="koni">
+            <lable id="paragraph" for="in">دوست داری برات چه کاری انجام بدم؟</lable>
+            <br>
+            <input id="input" type="text" name="in">
+            <br>
+            <button onclick="backgroundImage();kirshodi();autoScroll" id="button">تایید</button>
+        </div>
+        <p id="kir"></p>
+        <script>
+        let play = document.getElementById("button");
         function playfuck (){
-            let audio = new Audio("fuckplay.mp3");
+            let audio = new Audio("sounds/fuckplay.mp3");
             audio.play()
         }
         play.addEventListener("click" , playfuck);
-    </script>
+        function backgroundImage(){
+            document.body.style.backgroundImage = "url('img/khayemani.jpg')";
+        }
+        function kirshodi(){
+            setInterval(kiri , 1)
+            function kiri(){
+                document.getElementById("kir").innerHTML += "کیر شدی 🗿";
+            }
+        }
+        function autoScroll(){
+
+            window.scrollBy(0, 500);
+
+        }
+        </script>
 </body>
 </html>
